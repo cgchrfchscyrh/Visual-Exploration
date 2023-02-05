@@ -262,7 +262,7 @@ def QL (q_value, wind_layer, episode, success,  StepSize=Alpha):
 #            except:
 #                print('episode ended cuz the drone stuck with no actions!')
         else:
-            action_list.append(action)
+            action_list.append(action) #
             
             next_state,reward_movement,battery,terminal= step(state,action,wind_layer,battery,terminal)
     
